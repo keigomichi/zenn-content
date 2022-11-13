@@ -8,14 +8,17 @@ published: false
 
 この記事は、[Gajeroll Advent Calendar 2022](https://qiita.com/advent-calendar/2022/gajeroll) の 1 日目の記事です。
 
-# 序文
+# はじめに
 
 みんなの憧れ MacBook。
 快適な macOS ライフを送るには十分なセットアップが欠かせません。
-「マスタリング macOS 環境構築」シリーズでは、スピーディーかつ簡単な macOS の環境構築の手順をご紹介します。
-この記事では、GUI アプリケーション編と題してこれから Web 開発をはじめる皆さんに、Web 開発者であれば誰もがインストールしているであろうアプリケーションを中心に取り上げていきます。
+「マスタリング macOS 環境構築」シリーズでは、スピーディーかつ簡単な macOS の環境構築の手順をご紹介します。以下の記事もあわせてご覧ください。
 
-著者しるす
+https://pc.gajeroll.com/
+
+https://pc.gajeroll.com/
+
+この記事では、GUI アプリケーション編と題してこれから Web 開発をはじめる皆さんに、Web 開発者であれば誰もがインストールしているであろうアプリケーションを中心に取り上げていきます。
 
 # Homebrew のインストール
 
@@ -32,7 +35,7 @@ https://brew.sh/index_ja
 # アプリケーションのインストール
 
 前項でインストールした Homebrew を使用して必要なアプリケーションをインストールしていきます。
-Homebrew には、
+Homebrew には、[Homebrew Cask](https://github.com/Homebrew/homebrew-cask) という CLI ワークフローがあり、macOS アプリケーションのインストールや管理を可能にします。
 
 ## iTerm2
 
@@ -56,6 +59,38 @@ brew install --cask google-chrome
 
 Homebrew: [https://formulae.brew.sh/cask/google-chrome](https://formulae.brew.sh/cask/google-chrome)
 https://www.google.com/intl/ja_jp/chrome/
+
+## Visual Studio Code
+
+軽量な動作、Git 操作、豊富な拡張機能などスマートな IDE です。
+おすすめの VS Code 拡張機能については以下の記事で詳しくご紹介していますので、ぜひご覧ください。
+
+https://pc.gajeroll.com/
+
+[JetBrains](https://www.jetbrains.com/ja-jp/) 製の IDE も定評があります。筆者は [PyCharm](https://www.jetbrains.com/ja-jp/pycharm/) を使ったことがあります。Gopher の方には [GoLand](https://www.jetbrains.com/ja-jp/go/) も人気のようです。
+
+```sh
+brew install --cask visual-studio-code
+```
+
+Homebrew: [https://formulae.brew.sh/cask/visual-studio-code](https://formulae.brew.sh/cask/visual-studio-code)
+
+https://code.visualstudio.com/
+
+## Google Drive
+
+Android スマートフォンをご利用の方は、mac で Google Drive を使うことで、Apple エコシステムの iCloud と同等の体験を手に入れることができます。
+Android と macOS 間の連携については以下の記事でもご紹介しています。
+
+https://pc.gajeroll.com/
+
+```sh
+brew install --cask google-drive
+```
+
+Homebrew: [https://formulae.brew.sh/cask/google-drive](https://formulae.brew.sh/cask/google-drive)
+
+https://www.google.com/drive/
 
 ## Alfred 5
 
@@ -96,26 +131,9 @@ Homebrew: [https://formulae.brew.sh/cask/discord](https://formulae.brew.sh/cask/
 
 https://discord.com/
 
-## Visual Studio Code
-
-軽量な動作、Git 操作、豊富な拡張機能などスマートな IDE です。
-おすすめの VS Code 拡張機能については以下の記事で詳しくご紹介していますので、ぜひご覧ください。
-
-https://pc.gajeroll.com/
-
-[JetBrains](https://www.jetbrains.com/ja-jp/) 製の IDE も定評があります。筆者は [PyCharm](https://www.jetbrains.com/ja-jp/pycharm/) を使ったことがあります。Gopher の方には [GoLand](https://www.jetbrains.com/ja-jp/go/) も人気のようです。
-
-```sh
-brew install --cask visual-studio-code
-```
-
-Homebrew: [https://formulae.brew.sh/cask/visual-studio-code](https://formulae.brew.sh/cask/visual-studio-code)
-
-https://code.visualstudio.com/
-
 ## Rectangle
 
-macOS は、デフォルトでは Windows 風の画面分割操作をすることができません。Rectangle をインストールすれば、キーボードショートカットやマウスのドラッグにより簡単な画面分割を可能にします。
+macOS では、Windows 風の画面分割操作をすることができません。Rectangle をインストールすれば、キーボードショートカットやマウスのドラッグにより簡単な画面分割を可能にします。
 
 ```sh
 brew install --cask rectangle
@@ -160,3 +178,14 @@ brew install --cask figma
 Homebrew: [https://formulae.brew.sh/cask/figmae](https://formulae.brew.sh/cask/figma)
 
 https://www.figma.com/ja/
+
+# まとめ
+
+最後までご覧いただきありがとうございます。
+PC ロールでは、テクノロジーに関する情報をまとめて発信しています。
+また、おすすめのガジェットについて幅広く紹介していく、ガジェロールもあります。
+ガジェットやソフトを使うエンジニア・クリエイターはぜひご覧ください。
+
+https://gajeroll.com/
+
+https://pc.gajeroll.com/
