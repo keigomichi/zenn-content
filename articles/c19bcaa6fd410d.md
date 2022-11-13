@@ -179,7 +179,7 @@ Homebrew: [https://formulae.brew.sh/cask/figmae](https://formulae.brew.sh/cask/f
 
 https://www.figma.com/ja/
 
-# まとめ
+# おわりに
 
 最後までご覧いただきありがとうございます。
 PC ロールでは、テクノロジーに関する情報をまとめて発信しています。
